@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Maquiagens</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image">
+        <img src= alt="" />
+      </div>
+      <div class="form">
+        <div class="title">
+          <h2>Cadastre as Maquiagens</h2>
+        </div>
+        <form id="cadastroMakeForm">
+          <label for="tipoMake">Tipo:</label>
+          <input
+            type="text"
+            id="tipoMake"
+            placeholder="Digite o tipo da maquiagem"
+          />
+          <label for="marca">Marca:</label>
+          <input
+            type="text"
+            id="marca"
+            placeholder="Digite a marca da maquiagem"
+            required
+          />
+          <label for="preco">Preço:</label>
+          <input
+            type="text"
+            id="preco"
+            placeholder="Digite o preço da maquiagem"
+          />
+          <div class="cadastrar">
+          <button type="button" onclick="cadastrarMake()">Cadastrar Maquiagem</button>
+        </div>
+        </form>
+      </div>
+      <div></div>
+    </div>
+    <div class="container table-container">
+      <div class="tabela">
+        <table id="cadastroMakeTable">
+          <tr>
+            <th>Nome da Maquiagem</th>
+            <th>Marca</th>
+            <th>Preço</th>
+            <th>Editar Estoque</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
