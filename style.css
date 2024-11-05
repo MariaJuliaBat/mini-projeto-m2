@@ -39,13 +39,13 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 2.5px;
   color: #972374;
+  padding-right: 30px;
 }
 
 .table-container {
-  width: 50%; 
+  width: 100%; 
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
 table {
@@ -62,38 +62,53 @@ th,td {
 
 button {
   font-size: 15px;
-  padding: 7px;
-  margin-top: 7px;
+  padding: 10px 20px; 
   cursor: pointer;
   border-radius: 5px;
-  background-color: #ff85c2;
+  background-color: #f791c4;
   color: white;
-  outline: none;
   border: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin-top: 8px;
+  margin-left: 70px;
 }
+
+button:hover {
+  transform: scale(1.1); 
+  background-color: #ff6aa6;
+}
+
 
 input {
   display: flex;
   width: 90%; 
   padding: 0.8rem 1rem;
   margin: 0.5rem 0;
-  border: 1px solid #632c46;
+  border: 1px solid #7c234c;
   border-radius: 10px;
   box-shadow: 2px 2px 8px rgba(168, 40, 141, 0.1);
 }
 
 input::placeholder {
   font-size: 15px;
-  color: #962459;
+  color: #000000;
 }
 
 label {
   font-size: 20px;
-  color: #831146;
+  color: #000000;
 }
 
 #buttonE {
-  margin: 8px;
+  padding: 10px 15px; 
+  margin-top: 10px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+#buttonE:hover {
+  transform: scale(1.1); 
+  background-color: #ff6aa6;
 }
 
 .tab {
@@ -101,6 +116,5 @@ label {
 }
 
 #cadastroMakeForm {
-  width: 75%;
-  margin-bottom: 20px;
+  width: 80%;
 }
