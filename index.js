@@ -38,8 +38,8 @@ function exibirMakes() {
           <td>${make[2]}</td>
           <td>
           <div class="render">
-            <button onclick="editarMake(${index})" id="botoes-1">Editar</button>
-            <button onclick="excluirMake(${index})" id="botoes-1">Excluir</button>
+            <button onclick="editarMake(${index})" id="buttonE">Editar</button>
+            <button onclick="excluirMake(${index})" id="buttonE">Excluir</button>
           </div>
           </td>
         </tr>
