@@ -43,9 +43,11 @@ function exibirMakes() {
           </div>
           </td>
         </tr>
-    `).join('')}
-  `;
+    `).join('')}`;
+
+  document.getElementById('contador').innerText = `Total de maquiagens cadastradas: ${makes.length}`;
 }
+
 
 function editarMake(index) {
   var make = makes[index];
@@ -60,3 +62,4 @@ function excluirMake(index) {
   makes.splice(index, 1);
   exibirMakes();
 }
+
